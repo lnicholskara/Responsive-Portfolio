@@ -62,7 +62,7 @@ body {
     box-sizing: border-box;
 }
 
-#navigation {
+.navigation {
     padding: 20px;
     color: #8F6464;
     float: right;
@@ -78,6 +78,10 @@ body {
     font-weight: bold;
     text-decoration: none;
     text-decoration-line: none;
+}
+
+.leftmargin {
+    margin-left: 30px;
 }
 
 a:active {
@@ -383,16 +387,19 @@ input.submit:active {
         display: inline-block;
     }
     
-    #navigation {
+    .navigation {
         width: 100%;
         margin-right: 0px;
         display: inline;
         position: static;
         height: auto;
+        background-color: #ffffff;
+        padding: 15px;
     }
 
     .category {
-        margin: 0px;
+        margin: 0px 0 0 20px;
+        text-align: center;
     }
     .headshot {
         width: 100%;
@@ -459,7 +466,6 @@ input.submit:active {
         padding-top: 5%;
     }
     
-
 }
 
 @-webkit-keyframes button {
