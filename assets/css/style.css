@@ -19,11 +19,19 @@ footer {
     width: 100%;
 }
 
+.footer,
+.push {
+  height: 50px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
 body {
     background-image: url("../images/wheat.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    height: 100%;
-    margin: 0;
     padding: 0;
 }
 
@@ -36,7 +44,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     padding: 20px;
-    padding-bottom: 50px;
+    margin-bottom: -50px;
 }
 
 .name {
@@ -162,6 +170,10 @@ input.submit {
     width: 82px;
     font-size: 16px;
     margin-top: 8px;
+    -webkit-animation-name: buttom; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: button;
+    animation-duration: 6s;
 }
 
 input.submit:hover {
@@ -211,7 +223,7 @@ input.submit:active {
     text-align: center;
     font-size: calc(10px + .8vw);
     width: 100%;
-    height: 17%;
+    height: 23%;
     padding-top: 5%;
 }
 
@@ -306,6 +318,13 @@ input.submit:active {
         padding-right: 10px;
         padding-bottom: 5px;
     }
+    .name {
+        width: 39%;
+    }
+    #navigation {
+        margin-right: 15px;
+        
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -353,24 +372,22 @@ input.submit:active {
         list-style-type: none;
     text-align: center;
     margin: 0;
-    position: fixed;
+    position: static;
     height: auto;
     }
 
     .name {
         width: 100%;
         margin-left: 0px;
-        position: fixed;
+        position: static;
         display: inline-block;
-        box-sizing: none;
     }
     
     #navigation {
         width: 100%;
         margin-right: 0px;
         display: inline;
-        box-sizing: none;
-        position: absolute;
+        position: static;
         height: auto;
     }
 
@@ -383,6 +400,77 @@ input.submit:active {
         padding-right: 0px;
         padding-bottom: 15px;
     }
+
+    .grid {
+        justify-content: space-evenly;
+        align-content: space-evenly;
+        grid-auto-columns: 1fr;
+    }
+    
+    [class*="Image"] {
+        display: inline-grid;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        grid-row-gap: 2em;
+    }
+
+    .Image1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .Image2 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    
+    .Image3 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .Image4 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+    
+    .portpicture {
+        object-fit: cover;
+        width: 100%;
+        max-height: 100%;
+        position: relative;
+    }
+    
+    .descriptions {
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #192F40;
+        color: #ffffff;
+        text-align: center;
+        font-size: calc(10px + .8vw);
+        width: 100%;
+        height: 18%;
+        padding-top: 5%;
+    }
+    
+
 }
+
+@-webkit-keyframes button {
+    from {background-color: #4C282B;}
+    to {background-color: #8F6464;}
+}
+
+/* Standard syntax */
+@keyframes button {
+    from {background-color: #4C282B;}
+    to {background-color: #8F6464;}
+    }
 
 
