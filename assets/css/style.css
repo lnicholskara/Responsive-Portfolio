@@ -68,16 +68,12 @@ body {
     float: right;
     clear: both;
     display: inline-flex;
-    margin-right: 10%;
+    margin-right: 5%;
     height: auto;
 }
 
 .category {
-    vertical-align: center;
-    margin: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    text-decoration-line: none;
+    margin: 10px;
 }
 
 .leftmargin {
@@ -91,6 +87,8 @@ a:active {
 a {
     text-decoration: none;
     text-decoration-line: none;
+    color: #192F40;
+    font-weight: bold;
 }
 
 .title {
@@ -389,7 +387,7 @@ input.submit:active {
     
     .navigation {
         width: 100%;
-        margin-right: 0px;
+        margin-right: 0%;
         display: inline;
         position: static;
         height: auto;
