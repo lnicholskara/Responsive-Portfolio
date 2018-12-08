@@ -91,6 +91,10 @@ a {
     font-weight: bold;
 }
 
+.portfolio-link {
+    font-weight: normal;
+}
+
 .title {
     color: #192F40;
     font-weight: bold;
